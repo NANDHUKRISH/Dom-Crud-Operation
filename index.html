@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM & TABLE Using DOM</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="table">
+        <section class="table-header">
+            <h3>STUDENT DETAILS</h3>
+            <button class="Add-sudent-Button">ADD STUDENT</button>
+        </section>
+        <section class="table-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Roll No</th>
+                        <th>Email-ID</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body" class="table-body-details">
+                    <tr class="tablerow">
+                        <td> Nandhu</td>
+                        <td>Krishna</td>
+                        <td>1</td>
+                        <td>nandhukrish@gmail.com</td>
+                        <td><button class="Edit-button" onclick="Edit(this)">EDIT</button></td>
+                        <td><button class="Delete-button" onclick="Delete(this)">DELETE</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+  
+     
+    <div class="container">
+        <div class="title">STUDENT'S FORM</div>
+        <form action="#" class="formbox">
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="firstname" class="details">FIRST NAME</label for="">
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your First name" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="lastname" class="details">LAST NAME</label for="">
+                    <input type="text" name="lastname" id="lastname"  placeholder="Enter your Last name" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="rollnumber" class="details">ROLL NUMBER</label for="">
+                    <input type="text" name="rollnumber" placeholder="Enter Roll number" id="rollnumber" autocomplete="off" required>
+                </div>
+                <div class="input-box">
+                    <label for="email" class="details" >EMAIL-ID</label for="">
+                    <input type="email" name="email" placeholder="Enter your Email-id" id="email" row="10" col="4" autocomplete="off" required>
+                </div>
+            </div>
+             <div class="button">
+                <div class="submitbutton">SUBMIT</div>
+             </div>
+        </form>
+        <button class="to-cancel" onclick="CancelButton(this)"> ❌ </button>
+    </div>
+
+</body>
+</html>
